@@ -1,0 +1,502 @@
+ git config --global user.name ladnodanil
+root@eltex-practice2-pg1-v21:~# git config --global user.email c082kk123@gmail.com
+root@eltex-practice2-pg1-v21:~# git config --global init.defaultBranch main
+root@eltex-practice2-pg1-v21:~# apt update
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Пол:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Пол:3 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Пол:4 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1 238 kB]
+Пол:6 http://ru.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [253 kB]
+Пол:7 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [163 kB]
+Пол:8 http://ru.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1 483 kB]
+Пол:9 http://ru.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [319 kB]
+Пол:10 http://ru.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Пол:11 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1 106 kB]
+Пол:12 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [376 kB]
+Пол:13 http://ru.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [33,2 kB]
+Пол:14 http://ru.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [6 772 B]
+Пол:15 http://ru.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Пол:16 http://ru.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7 060 B]
+Пол:17 http://ru.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B                                                                                                ]
+Пол:18 http://ru.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [28,4 kB                                                                                                ]
+Пол:19 http://ru.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B                                                                                                ]
+Пол:20 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21,6 kB]
+Пол:21 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Пол:22 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [52,3 kB]
+Пол:23 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Получено 5 468 kB за 1с (3 743 kB/s)
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Может быть обновлено 69 пакетов. Запустите «apt list --upgradable» для их показа.
+root@eltex-practice2-pg1-v21:~# apt install git gh
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Уже установлен пакет git самой новой версии (1:2.43.0-1ubuntu7.3).
+git помечен как установленный вручную.
+Следующие НОВЫЕ пакеты будут установлены:
+  gh
+Обновлено 0 пакетов, установлено 1 новых пакетов, для удаления отмечено 0 пакетов, и 69 пакет                                                                                                ов не обновлено.
+Необходимо скачать 8 826 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 45,4 MB.
+Хотите продолжить? [Д/н] y
+Пол:1 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 gh amd64 2.45.0-1ubunt                                                                                                u0.2 [8 826 kB]
+Получено 8 826 kB за 3с (3 224 kB/s)
+Выбор ранее не выбранного пакета gh.
+(Чтение базы данных … на данный момент установлено 124859 файлов и каталогов.)
+Подготовка к распаковке …/gh_2.45.0-1ubuntu0.2_amd64.deb …
+Распаковывается gh (2.45.0-1ubuntu0.2) …
+Настраивается пакет gh (2.45.0-1ubuntu0.2) …
+Обрабатываются триггеры для man-db (2.12.0-4build2) …
+Scanning processes...
+Scanning candidates...
+Scanning linux images...
+
+Pending kernel upgrade!
+Running kernel version:
+  6.8.0-55-generic
+Diagnostics:
+  The currently running kernel version is not the expected kernel version 6.8.0-63-generic.
+
+Restarting the system to load the new kernel will not be handled automatically, so you
+should consider rebooting.
+
+Restarting services...
+
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart getty@tty1.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@eltex-practice2-pg1-v21:~# ssh-keygen -t ed25519 -f ~/.ssh/ladnodanil
+Generating public/private ed25519 key pair.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /root/.ssh/ladnodanil
+Your public key has been saved in /root/.ssh/ladnodanil.pub
+The key fingerprint is:
+SHA256:ORYSEikyYT3wZwGtgRJUu9qig2ld8NJtdw5BlaEmaIM root@eltex-practice2-pg1-v21
+The key's randomart image is:
++--[ED25519 256]--+
+|+*=o=+.   .oo    |
+|=.o++oo. ...     |
+|.o E+*..oo       |
+|   o= ..o+       |
+|   .+ . S .      |
+|  o. + + + .     |
+|.+..o . . +      |
+|=...       .     |
+|o.               |
++----[SHA256]-----+
+root@eltex-practice2-pg1-v21:~# gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations on this host? \  [Use arrows to move, ty                                                                                                ? What is your preferred protocol for Git operations on this host? SSH
+? Upload your SSH public key to your GitHub account? /root/.ssh/ladnodanil.pub
+? Title for your SSH key: eltex-practice2-pgX-vY
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: FAB6-CE4B
+Press Enter to open github.com in your browser...
+! Failed opening a web browser at https://github.com/login/device
+  exec: "xdg-open,x-www-browser,www-browser,wslview": executable file not found in $PATH
+  Please try entering the URL in your browser manually
+✓ Authentication complete.
+- gh config set -h github.com git_protocol ssh
+✓ Configured git protocol
+! Authentication credentials saved in plain text
+✓ Uploaded the SSH key to your GitHub account: /root/.ssh/ladnodanil.pub
+✓ Logged in as ladnodanil
+root@eltex-practice2-pg1-v21:~# gh auth setup-git --hostname github.com
+root@eltex-practice2-pg1-v21:~# gh auth status
+github.com
+  ✓ Logged in to github.com account ladnodanil (/root/.config/gh/hosts.yml)
+  - Active account: true
+  - Git operations protocol: ssh
+  - Token: gho_************************************
+  - Token scopes: 'admin:public_key', 'gist', 'read:org', 'repo'
+root@eltex-practice2-pg1-v21:~# gh repo create --public m1
+✓ Created repository ladnodanil/m1 on GitHub
+  https://github.com/ladnodanil/m1
+root@eltex-practice2-pg1-v21:~# mkdir ~/m1 && cd ~/m1
+        echo "# dasdasd" >> README.md
+root@eltex-practice2-pg1-v21:~/m1# ls
+README.md
+root@eltex-practice2-pg1-v21:~/m1# git init
+Initialized empty Git repository in /root/m1/.git/
+root@eltex-practice2-pg1-v21:~/m1# git add README.md
+root@eltex-practice2-pg1-v21:~/m1# git commit -m "first commit"
+[main (root-commit) 4f9c1b7] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+root@eltex-practice2-pg1-v21:~/m1# git branch -M main
+root@eltex-practice2-pg1-v21:~/m1# git remote add origin https://github.com/ladnodanil/m1.git
+root@eltex-practice2-pg1-v21:~/m1# git status
+On branch main
+nothing to commit, working tree clean
+root@eltex-practice2-pg1-v21:~/m1# git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 216 bytes | 216.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ladnodanil/m1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+root@eltex-practice2-pg1-v21:~/m1# mkdir -p module1/task1
+root@eltex-practice2-pg1-v21:~/m1# mkdir module1/task2
+root@eltex-practice2-pg1-v21:~/m1# mkdir module1/task3
+root@eltex-practice2-pg1-v21:~/m1# pwd
+/root/m1
+root@eltex-practice2-pg1-v21:~/m1# cd ..
+root@eltex-practice2-pg1-v21:~# pwd
+/root
+root@eltex-practice2-pg1-v21:~# ls
+arc1.tar.gz      etc_backup_gzip                    practice2_eltex-pg1-v21_part2.log
+arc2.tar.bz2     m1                                 practice2_eltex-pg1-v21_part3.log
+etc_backup       motd.tar.qz
+etc_backup_7zip  practice2_eltex-pg1-v21_part1.log
+root@eltex-practice2-pg1-v21:~# scp
+::1:                                ip6-allrouters:
+arc1.tar.gz                         ip6-localhost:
+arc2.tar.bz2                        ip6-localnet:
+eltex-template:                     ip6-loopback:
+etc_backup/                         ip6-mcastprefix:
+etc_backup_7zip/                    localhost:
+etc_backup_gzip/                    m1/
+fe00::0:                            motd.tar.qz
+ff00::0:                            practice2_eltex-pg1-v21_part1.log
+ff02::1:                            practice2_eltex-pg1-v21_part2.log
+ff02::2:                            practice2_eltex-pg1-v21_part3.log
+ip6-allnodes:
+root@eltex-practice2-pg1-v21:~# exit
+logout
+Connection to 172.16.9.195 closed.
+eltex-pg1-v21@eltex-2025-summer:~$ ls
+'$USER_part3_gt50M.log'   2025-01   2025-04   2025-07   2025-10   D1
+'$USER_part3.log'         2025-02   2025-05   2025-08   2025-11   report_part1.txt
+'$USER_part.log'          2025-03   2025-06   2025-09   2025-12
+eltex-pg1-v21@eltex-2025-summer:~$ scp report_part1.txt
+\$USER_part3_gt50M.log   2025-06/                 eltex.vt.cs.nstu.ru:
+\$USER_part3.log         2025-07/                 ff02::1:
+\$USER_part.log          2025-08/                 ff02::2:
+::1:                     2025-09/                 ip6-allnodes:
+2025-01/                 2025-10/                 ip6-allrouters:
+2025-02/                 2025-11/                 ip6-localhost:
+2025-03/                 2025-12/                 ip6-loopback:
+2025-04/                 D1/                      localhost:
+2025-05/                 eltex:                   report_part1.txt
+eltex-pg1-v21@eltex-2025-summer:~$ spc
+$USER_part3_gt50M.log  2025-07/               .config/
+$USER_part3.log        2025-08/               D1/
+$USER_part.log         2025-09/               .lesshst
+2025-01/               2025-10/               .log
+2025-02/               2025-11/               .profile
+2025-03/               2025-12/               report_part1.txt
+2025-04/               .bash_history          .ssh/
+2025-05/               .bash_logout           .viminfo
+2025-06/               .bashrc
+eltex-pg1-v21@eltex-2025-summer:~$ scp report_part1.txt root@172.16.9.195:/root
+Enter passphrase for key '/home/eltex-pg1-v21/.ssh/id_rsa':
+report_part1.txt                              100%  126     9.5KB/s   00:00
+eltex-pg1-v21@eltex-2025-summer:~$ scp $U root@172.16.9.195:/root
+$UID   $USER
+eltex-pg1-v21@eltex-2025-summer:~$ scp $USER root@172.16.9.195:/root
+$USER
+eltex-pg1-v21@eltex-2025-summer:~$ scp $USER_part.log root@172.16.9.195:/root
+Enter passphrase for key '/home/eltex-pg1-v21/.ssh/id_rsa':
+.log                                          100%    0     0.0KB/s   00:00
+eltex-pg1-v21@eltex-2025-summer:~$ scp $USER_part3.log root@172.16.9.195:/root
+Enter passphrase for key '/home/eltex-pg1-v21/.ssh/id_rsa':
+.log                                          100%    0     0.0KB/s   00:00
+eltex-pg1-v21@eltex-2025-summer:~$ scp $USER_part3_gt50M.log  root@172.16.9.195:                                                                                                             /root
+Enter passphrase for key '/home/eltex-pg1-v21/.ssh/id_rsa':
+.log                                          100%    0     0.0KB/s   00:00
+eltex-pg1-v21@eltex-2025-summer:~$ ssh root@172.16.9.195
+Enter passphrase for key '/home/eltex-pg1-v21/.ssh/id_rsa':
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-55-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Ср 16 июл 2025 10:06:12 UTC
+
+  System load:  0.0                Processes:              114
+  Usage of /:   41.2% of 14.66GB   Users logged in:        1
+  Memory usage: 11%                IPv4 address for ens18: 172.16.9.195
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Расширенное поддержание безопасности (ESM) для Applications выключено.
+
+68 обновлений может быть применено немедленно.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+1 дополнительное обновление безопасности может быть применено с помощью ESM Apps                                                                                                             .
+Подробнее о включении службы ESM Apps at https://ubuntu.com/esm
+
+
+*** System restart required ***
+Петров Даниил
+Вс 13 июл 2025 16:39:49 UTC
+
+Last login: Wed Jul 16 08:24:40 2025 from 172.16.8.4
+root@eltex-practice2-pg1-v21:~# ls
+arc1.tar.gz      motd.tar.qz
+arc2.tar.bz2     practice2_eltex-pg1-v21_part1.log
+etc_backup       practice2_eltex-pg1-v21_part2.log
+etc_backup_7zip  practice2_eltex-pg1-v21_part3.log
+etc_backup_gzip  report_part1.txt
+m1
+root@eltex-practice2-pg1-v21:~# ls -a
+.              etc_backup       motd.tar.qz
+..             etc_backup_7zip  practice2_eltex-pg1-v21_part1.log
+arc1.tar.gz    etc_backup_gzip  practice2_eltex-pg1-v21_part2.log
+arc2.tar.bz2   .gitconfig       practice2_eltex-pg1-v21_part3.log
+.bash_history  .lesshst         .profile
+.bashrc        .local           report_part1.txt
+.cache         .log             .ssh
+.config        m1               .viminfo
+root@eltex-practice2-pg1-v21:~# cd //
+root@eltex-practice2-pg1-v21://# cd ..
+root@eltex-practice2-pg1-v21://# pwd
+//
+root@eltex-practice2-pg1-v21://# cd ~
+root@eltex-practice2-pg1-v21:~# ls
+arc1.tar.gz      motd.tar.qz
+arc2.tar.bz2     practice2_eltex-pg1-v21_part1.log
+etc_backup       practice2_eltex-pg1-v21_part2.log
+etc_backup_7zip  practice2_eltex-pg1-v21_part3.log
+etc_backup_gzip  report_part1.txt
+m1
+root@eltex-practice2-pg1-v21:~# pwd
+/root
+root@eltex-practice2-pg1-v21:~# cd ..
+root@eltex-practice2-pg1-v21:/# ls
+bin                home               mnt   sbin.usr-is-merged  usr
+bin.usr-is-merged  lib                opt   snap                var
+boot               lib64              proc  srv
+cdrom              lib.usr-is-merged  root  swap.img
+dev                lost+found         run   sys
+etc                media              sbin  tmp
+root@eltex-practice2-pg1-v21:/# cd ~
+root@eltex-practice2-pg1-v21:~# exit
+logout
+Connection to 172.16.9.195 closed.
+eltex-pg1-v21@eltex-2025-summer:~$ scp ' root@172.16.9.195:/root
+::1:                  eltex.vt.cs.nstu.ru:  ff02::2:              ip6-allrouters:       ip6-loopback:
+eltex:                ff02::1:              ip6-allnodes:         ip6-localhost:        localhost:
+eltex-pg1-v21@eltex-2025-summer:~$ scp '$USER_part3_gt50M.log' root@172.16.9.195:/root
+Enter passphrase for key '/home/eltex-pg1-v21/.ssh/id_rsa':
+$USER_part3_gt50M.log                                                                                                                                      100%    0     0.0KB/s   00:00
+eltex-pg1-v21@eltex-2025-summer:~$ ssh root@172.16.9.195
+Enter passphrase for key '/home/eltex-pg1-v21/.ssh/id_rsa':
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-55-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Ср 16 июл 2025 10:09:02 UTC
+
+  System load:  0.0                Processes:              115
+  Usage of /:   41.2% of 14.66GB   Users logged in:        1
+  Memory usage: 11%                IPv4 address for ens18: 172.16.9.195
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Расширенное поддержание безопасности (ESM) для Applications выключено.
+
+68 обновлений может быть применено немедленно.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+1 дополнительное обновление безопасности может быть применено с помощью ESM Apps.
+Подробнее о включении службы ESM Apps at https://ubuntu.com/esm
+
+
+*** System restart required ***
+Петров Даниил
+Вс 13 июл 2025 16:39:49 UTC
+
+Last login: Wed Jul 16 10:06:29 2025 from 172.16.8.4
+root@eltex-practice2-pg1-v21:~# ls
+'$USER_part3_gt50M.log'   arc2.tar.bz2   etc_backup_7zip   m1            practice2_eltex-pg1-v21_part1.log   practice2_eltex-pg1-v21_part3.log
+ arc1.tar.gz              etc_backup     etc_backup_gzip   motd.tar.qz   practice2_eltex-pg1-v21_part2.log   report_part1.txt
+root@eltex-practice2-pg1-v21:~# exit
+logout
+Connection to 172.16.9.195 closed.
+eltex-pg1-v21@eltex-2025-summer:~$ scp '$USER_part3.log' root@172.16.9.195:/root
+Enter passphrase for key '/home/eltex-pg1-v21/.ssh/id_rsa':
+$USER_part3.log                                                                                                                                            100% 1855    38.8KB/s   00:00
+eltex-pg1-v21@eltex-2025-summer:~$ scp '$USER_part.log' root@172.16.9.195:/root
+Enter passphrase for key '/home/eltex-pg1-v21/.ssh/id_rsa':
+$USER_part.log                                                                                                                                             100% 5886   463.3KB/s   00:00
+eltex-pg1-v21@eltex-2025-summer:~$ ssh root@172.16.9.195
+Enter passphrase for key '/home/eltex-pg1-v21/.ssh/id_rsa':
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-55-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Ср 16 июл 2025 10:10:04 UTC
+
+  System load:  0.0                Processes:              115
+  Usage of /:   41.2% of 14.66GB   Users logged in:        1
+  Memory usage: 11%                IPv4 address for ens18: 172.16.9.195
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Расширенное поддержание безопасности (ESM) для Applications выключено.
+
+68 обновлений может быть применено немедленно.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+1 дополнительное обновление безопасности может быть применено с помощью ESM Apps.
+Подробнее о включении службы ESM Apps at https://ubuntu.com/esm
+
+
+*** System restart required ***
+Петров Даниил
+Вс 13 июл 2025 16:39:49 UTC
+
+Last login: Wed Jul 16 10:09:12 2025 from 172.16.8.4
+root@eltex-practice2-pg1-v21:~# ls
+'$USER_part3_gt50M.log'  '$USER_part.log'   arc2.tar.bz2   etc_backup_7zip   m1            practice2_eltex-pg1-v21_part1.log   practice2_eltex-pg1-v21_part3.log
+'$USER_part3.log'         arc1.tar.gz       etc_backup     etc_backup_gzip   motd.tar.qz   practice2_eltex-pg1-v21_part2.log   report_part1.txt
+root@eltex-practice2-pg1-v21:~# mv report_part1.txt m1/
+.git/      module1/   README.md
+root@eltex-practice2-pg1-v21:~# mv report_part1.txt m1/module1/task
+task1/ task2/ task3/
+root@eltex-practice2-pg1-v21:~# mv report_part1.txt m1/module1/task1
+root@eltex-practice2-pg1-v21:~# mv '$U
+$USER_part3_gt50M.log              .bash_history                      etc_backup_7zip/                   .log                               practice2_eltex-pg1-v21_part3.log
+$USER_part3.log                    .bashrc                            etc_backup_gzip/                   m1/                                .profile
+$USER_part.log                     .cache/                            .gitconfig                         motd.tar.qz                        .ssh/
+arc1.tar.gz                        .config/                           .lesshst                           practice2_eltex-pg1-v21_part1.log  .viminfo
+arc2.tar.bz2                       etc_backup/                        .local/                            practice2_eltex-pg1-v21_part2.log
+root@eltex-practice2-pg1-v21:~# mv '$USER_part.log' m1/module1/task2
+root@eltex-practice2-pg1-v21:~# ls
+'$USER_part3_gt50M.log'   arc1.tar.gz    etc_backup        etc_backup_gzip   motd.tar.qz                         practice2_eltex-pg1-v21_part2.log
+'$USER_part3.log'         arc2.tar.bz2   etc_backup_7zip   m1                practice2_eltex-pg1-v21_part1.log   practice2_eltex-pg1-v21_part3.log
+root@eltex-practice2-pg1-v21:~# mv '$USER_part3.log' m1/module1/task3
+root@eltex-practice2-pg1-v21:~# mv '$USER_part3_gt50M.log' m1/module1/task3
+root@eltex-practice2-pg1-v21:~# cd m1
+root@eltex-practice2-pg1-v21:~/m1# ls -r
+README.md  module1
+root@eltex-practice2-pg1-v21:~/m1# ls -r module1/
+task3  task2  task1
+root@eltex-practice2-pg1-v21:~/m1# cd module1/
+root@eltex-practice2-pg1-v21:~/m1/module1# cd task
+-bash: cd: task: No such file or directory
+root@eltex-practice2-pg1-v21:~/m1/module1# cd task1
+root@eltex-practice2-pg1-v21:~/m1/module1/task1# ls
+report_part1.txt
+root@eltex-practice2-pg1-v21:~/m1/module1/task1# cd ..
+root@eltex-practice2-pg1-v21:~/m1/module1# cd ..
+root@eltex-practice2-pg1-v21:~/m1# git add .
+root@eltex-practice2-pg1-v21:~/m1# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   module1/task1/report_part1.txt
+        new file:   module1/task2/$USER_part.log
+        new file:   module1/task3/$USER_part3.log
+        new file:   module1/task3/$USER_part3_gt50M.log
+
+root@eltex-practice2-pg1-v21:~/m1# git commit "pr2"
+error: pathspec 'pr2' did not match any file(s) known to git
+root@eltex-practice2-pg1-v21:~/m1# git commit (pr2)
+-bash: syntax error near unexpected token `('
+root@eltex-practice2-pg1-v21:~/m1# git commit -m "pr2"
+[main c25a83a] pr2
+ 4 files changed, 290 insertions(+)
+ create mode 100644 module1/task1/report_part1.txt
+ create mode 100644 module1/task2/$USER_part.log
+ create mode 100644 module1/task3/$USER_part3.log
+ create mode 100644 module1/task3/$USER_part3_gt50M.log
+root@eltex-practice2-pg1-v21:~/m1# git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (10/10), 2.91 KiB | 2.91 MiB/s, done.
+Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ladnodanil/m1.git
+   4f9c1b7..c25a83a  main -> main
+root@eltex-practice2-pg1-v21:~/m1# cd ..
+root@eltex-practice2-pg1-v21:~# mkdir ~/m1_clone && cd ~/m1_clone
+root@eltex-practice2-pg1-v21:~/m1_clone# git clone https://github.com/ladnodanil/m1.git .
+Cloning into '.'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 13 (delta 0), reused 13 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (13/13), done.
+root@eltex-practice2-pg1-v21:~/m1_clone# cd ..
+root@eltex-practice2-pg1-v21:~# cd m1
+root@eltex-practice2-pg1-v21:~/m1# mkdir -p module2/task1
+root@eltex-practice2-pg1-v21:~/m1# mkdir module2/task2
+root@eltex-practice2-pg1-v21:~/m1# mkdir module3/task3
+mkdir: cannot create directory ‘module3/task3’: No such file or directory
+root@eltex-practice2-pg1-v21:~/m1# mkdir module2/task3
+root@eltex-practice2-pg1-v21:~/m1# cd ..
+root@eltex-practice2-pg1-v21:~# ls
+arc1.tar.gz      etc_backup_gzip  practice2_eltex-pg1-v21_part1.log
+arc2.tar.bz2     m1               practice2_eltex-pg1-v21_part2.log
+etc_backup       m1_clone         practice2_eltex-pg1-v21_part3.log
+etc_backup_7zip  motd.tar.qz
+root@eltex-practice2-pg1-v21:~# mv practice2_eltex-pg1-v21_part1.log m1/
+.git/      module1/   module2/   README.md
+root@eltex-practice2-pg1-v21:~# mv practice2_eltex-pg1-v21_part1.log m1/module2/                                                                                                             task
+task1/ task2/ task3/
+root@eltex-practice2-pg1-v21:~# mv practice2_eltex-pg1-v21_part1.log m1/module2/task1
+root@eltex-practice2-pg1-v21:~# mv practice2_eltex-pg1-v21_part2.log m1/module2/task2
+root@eltex-practice2-pg1-v21:~# mv practice2_eltex-pg1-v21_part3.log m1/module2/task3
+root@eltex-practice2-pg1-v21:~# git add .
+fatal: not a git repository (or any of the parent directories): .git
+root@eltex-practice2-pg1-v21:~# cd m1
+root@eltex-practice2-pg1-v21:~/m1# git add .
+root@eltex-practice2-pg1-v21:~/m1# git commit -m "pr2git"
+[main 3de2c54] pr2git
+ 3 files changed, 400 insertions(+)
+ create mode 100644 module2/task1/practice2_eltex-pg1-v21_part1.log
+ create mode 100644 module2/task2/practice2_eltex-pg1-v21_part2.log
+ create mode 100644 module2/task3/practice2_eltex-pg1-v21_part3.log
+root@eltex-practice2-pg1-v21:~/m1# git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+root@eltex-practice2-pg1-v21:~/m1# git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 7.25 KiB | 7.25 MiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ladnodanil/m1.git
+   c25a83a..3de2c54  main -> main
+root@eltex-practice2-pg1-v21:~/m1# cd ..
