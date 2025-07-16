@@ -63,6 +63,38 @@ awk -F ": " '{n=split($1, arr, " "); a=arr[n]; print a,$2,$3}' /var/log/auth.log
 [    6.940167] systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
 
 
+grep /usr/sbin/nologin /etc/passwd | awk -F: '{print $3,$1,$4}' | sort -k1 -nr
+65534 nobody 65534
+1003 user3 1003
+998 systemd-network 998
+997 systemd-timesync 997
+992 systemd-resolve 992
+991 polkitd 991
+989 fwupd-refresh 989
+109 sshd 65534
+108 usbmux 46
+107 landscape 109
+105 tcpdump 107
+104 uuidd 105
+103 syslog 104
+101 messagebus 102
+42 _apt 65534
+39 irc 39
+38 list 38
+34 backup 34
+33 www-data 33
+13 proxy 13
+10 uucp 10
+9 news 9
+8 mail 8
+7 lp 7
+6 man 12
+5 games 60
+3 sys 3
+2 bin 2
+1 daemon 1
+
+
 wc -l /var/log/kern.log
 45 /var/log/kern.log
 
