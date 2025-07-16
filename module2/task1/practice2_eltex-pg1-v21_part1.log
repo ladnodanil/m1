@@ -1,0 +1,320 @@
+eltex-pg1-v21@eltex-2025-summer:~$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/eltex-pg1-v21/.ssh/id_rsa):
+Created directory '/home/eltex-pg1-v21/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/eltex-pg1-v21/.ssh/id_rsa
+Your public key has been saved in /home/eltex-pg1-v21/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:TOG38WfXmvdIJ41etiSk3ghaQmnd551/cJF9rRLasI4 eltex-pg1-v21@eltex-2025-summer
+The key's randomart image is:
++---[RSA 3072]----+
+|        .        |
+|       . .       |
+|        o o     +|
+|       oo.o+.  o=|
+|       +S..*.+o.=|
+|      o   o Bo+*o|
+|       . = . +***|
+|        E + oooB=|
+|       .   o .o.+|
++----[SHA256]-----+
+eltex-pg1-v21@eltex-2025-summer:~$ cat ~/.ssh/id_rsa.pub                        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDaDlhN450y4psIP8TcUQoa5/MuQTVPxYxbYJwJVPoLyK9AfIAfWrqYayqd/nj+WwPo/V1xhLzhzwy8O12nf6mDGsjbyXxAaU4QS9ZmbFtyp426N11jprG84CZCjhKmhhxlncvaAVNmVRzg76Eht3ektdC+XFjABumTiggbJPwxQvte897QUWXrxiPJ7fRTEGsuu7ifJfgdHOSYqLfYXWbZjgVqqJMtv0/QUqkQJSnAqFwddhvAFX12ga/YhQodn9d79782SN4+4EzaYGRQ4tn9isA66cAD4HpXucx8YVhh5f5Dpt52bVurNDvfDY4vzcLB8qLm8766FuXJ4AwQUAhdhsN0ozdyTMaQ0vgLSEwcDO5IcGyRv7t+A8bCIC+9Lu3HHoZ0ORoqmj8/AOtu9ficjy1n4RcFE9UPUP6nidwe6D2A0cWh/0MuPBedRS0tw/e0TKPDO11en7tJKii4PPqW4+INH8I5+z6SBuB3IT4H4garnWim6lZLdO3AtjRTYd0= eltex-pg1-v21@eltex-2025-summer
+eltex-pg1-v21@eltex-2025-summer:~$ ssh-copy-id -i ~/.ssh/id_rsa.pub root@172.16.9.195
+eltex-pg1-v21@eltex-2025-summer:~$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/eltex-pg1-v21/.ssh/id_rsa):
+Created directory '/home/eltex-pg1-v21/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/eltex-pg1-v21/.ssh/id_rsa
+Your public key has been saved in /home/eltex-pg1-v21/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:TOG38WfXmvdIJ41etiSk3ghaQmnd551/cJF9rRLasI4 eltex-pg1-v21@eltex-2025-summer
+The key's randomart image is:
++---[RSA 3072]----+
+|        .        |
+|       . .       |
+|        o o     +|
+|       oo.o+.  o=|
+|       +S..*.+o.=|
+|      o   o Bo+*o|
+|       . = . +***|
+|        E + oooB=|
+|       .   o .o.+|
++----[SHA256]-----+
+eltex-pg1-v21@eltex-2025-summer:~$ cat ~/.ssh/id_rsa
+-----BEGIN OPENSSH PRIVATE KEY-----
+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
+-----END OPENSSH PRIVATE KEY-----
+eltex-pg1-v21@eltex-2025-summer:~$ man ssh-copy-id
+eltex-pg1-v21@eltex-2025-summer:~$ cat ~/.ssh/id_rsa.pub                        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDaDlhN450y4psIP8TcUQoa5/MuQTVPxYxbYJwJVPoLyK9AfIAfWrqYayqd/nj+WwPo/V1xhLzhzwy8O12nf6mDGsjbyXxAaU4QS9ZmbFtyp426N11jprG84CZCjhKmhhxlncvaAVNmVRzg76Eht3ektdC+XFjABumTiggbJPwxQvte897QUWXrxiPJ7fRTEGsuu7ifJfgdHOSYqLfYXWbZjgVqqJMtv0/QUqkQJSnAqFwddhvAFX12ga/YhQodn9d79782SN4+4EzaYGRQ4tn9isA66cAD4HpXucx8YVhh5f5Dpt52bVurNDvfDY4vzcLB8qLm8766FuXJ4AwQUAhdhsN0ozdyTMaQ0vgLSEwcDO5IcGyRv7t+A8bCIC+9Lu3HHoZ0ORoqmj8/AOtu9ficjy1n4RcFE9UPUP6nidwe6D2A0cWh/0MuPBedRS0tw/e0TKPDO11en7tJKii4PPqW4+INH8I5+z6SBuB3IT4H4garnWim6lZLdO3AtjRTYd0= eltex-pg1-v21@eltex-2025-summer
+eltex-pg1-v21@eltex-2025-summer:~$ ssh-copy-id -i ~/.ssh/id_rsa.pub
+::1                  ff02::2              ip6-loopback
+eltex                ip6-allnodes         localhost
+eltex.vt.cs.nstu.ru  ip6-allrouters
+ff02::1              ip6-localhost
+eltex-pg1-v21@eltex-2025-summer:~$ ssh-copy-id -i ~/.ssh/id_rsa.pub root@172.16.9.195
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/eltex-pg1-v                                                                                                             21/.ssh/id_rsa.pub"
+The authenticity of host '172.16.9.195 (172.16.9.195)' can't be established.
+ED25519 key fingerprint is SHA256:YNVzj+RtetZfXv5XUn/CUjeEcaMD4eg3jy8EuGGIS+o.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter                                                                                                              out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompt                                                                                                             ed now it is to install the new keys
+root@172.16.9.195's password:
+Permission denied, please try again.
+root@172.16.9.195's password:
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'root@172.16.9.195'"
+and check to make sure that only the key(s) you wanted were added.
+
+eltex-pg1-v21@eltex-2025-summer:~$ ssh root@172.16.9.195
+Enter passphrase for key '/home/eltex-pg1-v21/.ssh/id_rsa':
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-55-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Fri Jul 11 03:32:52 AM UTC 2025
+
+  System load:  0.0                Processes:              109
+  Usage of /:   37.8% of 14.66GB   Users logged in:        0
+  Memory usage: 5%                 IPv4 address for ens18: 172.16.9.195
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+root@eltex-practice2-pg1-v21:~# cat ~/.ssh/authorized_keys
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDaDlhN450y4psIP8TcUQoa5/MuQTVPxYxbYJwJVPoL                                                                                                             yK9AfIAfWrqYayqd/nj+WwPo/V1xhLzhzwy8O12nf6mDGsjbyXxAaU4QS9ZmbFtyp426N11jprG84CZC                                                                                                             jhKmhhxlncvaAVNmVRzg76Eht3ektdC+XFjABumTiggbJPwxQvte897QUWXrxiPJ7fRTEGsuu7ifJfgd                                                                                                             HOSYqLfYXWbZjgVqqJMtv0/QUqkQJSnAqFwddhvAFX12ga/YhQodn9d79782SN4+4EzaYGRQ4tn9isA6                                                                                                             6cAD4HpXucx8YVhh5f5Dpt52bVurNDvfDY4vzcLB8qLm8766FuXJ4AwQUAhdhsN0ozdyTMaQ0vgLSEwc                                                                                                             DO5IcGyRv7t+A8bCIC+9Lu3HHoZ0ORoqmj8/AOtu9ficjy1n4RcFE9UPUP6nidwe6D2A0cWh/0MuPBed                                                                                                             RS0tw/e0TKPDO11en7tJKii4PPqW4+INH8I5+z6SBuB3IT4H4garnWim6lZLdO3AtjRTYd0= eltex-p                                                                                                             g1-v21@eltex-2025-summer
+
+root@eltex-practice2-pg1-v21:~# ls -la .ssh/authorized_keys
+-rw------- 1 root root 585 Jul 11 03:29 .ssh/authorized_keys
+eltex-pg1-v21@eltex-2025-summer:~$ ls -la ~/.ssh/id_rsa.pub
+-rw-r--r-- 1 eltex-pg1-v21 eltex-pg1-v21 585 Jul 11 10:18 /home/eltex-pg1-v21/.s                                                                                                             sh/id_rsa.pub
+eltex-pg1-v21@eltex-2025-summer:~$ ssh root@172.16.9.195                                                                                                                                     Enter passphrase for key '/home/eltex-pg1-v21/.ssh/id_rsa':
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-55-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Fri Jul 11 03:44:10 AM UTC 2025
+
+  System load:  0.0                Processes:              110
+  Usage of /:   37.8% of 14.66GB   Users logged in:        0
+  Memory usage: 5%                 IPv4 address for ens18: 172.16.9.195
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+root@eltex-practice2-pg1-v21:~# useradd -m -s /bin/bash user1
+root@eltex-practice2-pg1-v21:~# passwd user1
+New password:
+Retype new password:
+passwd: password updated successfully
+root@eltex-practice2-pg1-v21:~# su - user1
+root@eltex-practice2-pg1-v21:~# adduser user2
+info: Adding user `user2' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `user2' (1002) ...
+info: Adding new user `user2' (1002) with group `user2 (1002)' ...
+info: Creating home directory `/home/user2' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for user2
+Enter the new value, or press ENTER for the default
+        Full Name []: USER2
+        Room Number []: 123
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] Y
+info: Adding new user `user2' to supplemental / extra groups `users' ...
+info: Adding user `user2' to group `users' ...
+root@eltex-practice2-pg1-v21:~# adduser user3
+info: Adding user `user3' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `user3' (1003) ...
+info: Adding new user `user3' (1003) with group `user3 (1003)' ...
+info: Creating home directory `/home/user3' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for user3
+Enter the new value, or press ENTER for the default
+        Full Name []: USER3
+        Room Number []: 234
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] Y
+info: Adding new user `user3' to supplemental / extra groups `users' ...
+info: Adding user `user3' to group `users' ...
+root@eltex-practice2-pg1-v21:~# grep user3 /etc/passwd
+user3:x:1003:1003:USER3,234,,:/home/user3:/bin/bash
+root@eltex-practice2-pg1-v21:~# usermod -s /usr/sbin/nologin user3
+root@eltex-practice2-pg1-v21:~# grep user3 /etc/passwd
+user3:x:1003:1003:USER3,234,,:/home/user3:/usr/sbin/nologin
+root@eltex-practice2-pg1-v21:~# su - user3
+This account is currently not available.
+root@eltex-practice2-pg1-v21:~# su -s /bin/bash user3
+user3@eltex-practice2-pg1-v21:/root$ exit
+
+root@eltex-practice2-pg1-v21:~# groupadd newgroup
+root@eltex-practice2-pg1-v21:~# usermod -aG newgroup user1
+root@eltex-practice2-pg1-v21:~# usermod -aG newgroup user2
+root@eltex-practice2-pg1-v21:~# usermod -aG newgroup user3
+root@eltex-practice2-pg1-v21:~# id -Gn user1
+user1 newgroup
+root@eltex-practice2-pg1-v21:~# id -Gn user2
+user2 users newgroup
+root@eltex-practice2-pg1-v21:~# id -Gn user3
+user3 users newgroup
+
+
+root@eltex-practice2-pg1-v21:~# mkdir -p /opt/share
+root@eltex-practice2-pg1-v21:~# chgrp newgroup /opt/share/
+root@eltex-practice2-pg1-v21:~# chmod g+rwxs /opt/share/
+root@eltex-practice2-pg1-v21:~# ls -ld /opt/share/
+drwxrwsr-x 2 root newgroup 4096 июл 11 04:45 /opt/share/
+
+umask 007
+
+root@eltex-practice2-pg1-v21:~# chmod +t /opt/share/
+root@eltex-practice2-pg1-v21:~# stat /opt/share/
+  File: /opt/share/
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 252,0   Inode: 524921      Links: 2
+Access: (3775/drwxrwsr-t)  Uid: (    0/    root)   Gid: ( 1004/newgroup)
+Access: 2025-07-13 06:49:27.941929252 +0000
+Modify: 2025-07-13 06:49:26.692908016 +0000
+Change: 2025-07-13 06:52:18.019829332 +0000
+ Birth: 2025-07-11 04:45:06.889401332 +0000
+user1@eltex-practice2-pg1-v21:/opt/share$ touch fileUser1.txt
+user2@eltex-practice2-pg1-v21:/opt/share$ touch fileUser2.txt
+user3@eltex-practice2-pg1-v21:/opt/share$ touch fileUser3.txt
+user3@eltex-practice2-pg1-v21:/opt/share$ ls
+fileUser1.txt  fileUser2.txt  fileUser3.txt
+user3@eltex-practice2-pg1-v21:/opt/share$ rm fileUser1.txt
+rm: cannot remove 'fileUser1.txt': Operation not permitted
+user3@eltex-practice2-pg1-v21:/opt/share$ rm fileUser2.txt
+rm: cannot remove 'fileUser2.txt': Operation not permitted
+user3@eltex-practice2-pg1-v21:/opt/share$ rm fileUser3.txt
+user3@eltex-practice2-pg1-v21:/opt/share$ ls
+fileUser1.txt  fileUser2.txt
+user3@eltex-practice2-pg1-v21:/opt/share$ exit
+
+sudo visudo
+user1 ALL=(ALL:ALL) NOPASSWD: /usr/bin/dmesg
+
+
+
+root@eltex-practice2-pg1-v21:~# chage -M 10 user1
+root@eltex-practice2-pg1-v21:~# sudo chage -l user1
+Last password change                                    : июл 11, 2025
+Password expires                                        : июл 21, 2025
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 10
+Number of days of warning before password expires       : 7
+root@eltex-practice2-pg1-v21:~# chage -M 10 user2
+root@eltex-practice2-pg1-v21:~# chage -M 10 user3
+
+
+sudo nano /etc/motd
+Петров Даниил
+
+sudo rsync -a --delete /etc/ /root/etc_backup/
+
+
+sudo tar -czf arc1.tar.gz etc_backup/
+sudo tar -cjf arc2.tar.bz2 etc_ba           ckup/
+root@eltex-practice2-pg1-v21:~# ls
+arc1.tar.gz   etc_backup
+arc2.tar.bz2  practice2_eltex-pg1-v21_part1.log
+root@eltex-practice2-pg1-v21:~# ls -lh
+total 1,2M
+-rw-r--r--   1 root root 583K июл 13 16:10 arc1.tar.gz
+-rw-r--r--   1 root root 550K июл 13 16:11 arc2.tar.bz2
+
+
+  260  rsync -avh --delete /etc/ etc_backup/
+  261  tar -czf motd.tar.qz etc_backup/motd
+  275  diff <(tar -tf arc2.tar.bz2 | sort) <(tar -tf arc1.tar.gz | sort)
+  276  sudo mkdir /root/etc_backup_gzip /root/etc_backup_7zip
+  278  tar -xzf arc1.tar.gz -C etc_backup_gzip/
+  290  tar -xjf arc2.tar.bz2 -C etc_backup_7zip/
+  295  sudo diff /root/etc_backup_7zip/etc_backup/motd /root/etc_backup_gzip/etc_backup/motd
+
